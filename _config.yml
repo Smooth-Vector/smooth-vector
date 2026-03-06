@@ -1,0 +1,10 @@
+title: Smooth Vector
+description: Strategic consultancy for modern businesses.
+baseurl: ""
+url: ""
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand">Smooth Vector</a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-primary nav-cta">Get in touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Smooth Vector</span>
+        <span class="footer-copy">&copy; {{ 'now' | date: "%Y" }} Smooth Vector. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
