@@ -1,342 +1,349 @@
 ---
 layout: default
-title: Business workflow automation for lean teams
-description: Smooth Vector helps SMEs and growing organisations improve efficiency through workflow automation, AI-enabled solutions, and pragmatic operational support.
+title: Workflow Automation for Lean Teams
+description: We combine AI and bespoke workflow automation to cut operational friction from your business. Over a decade of cross-industry experience, no layers, no heavy process.
 ---
 
-<!-- Hero + Ribbon: together fill exactly one viewport -->
-<div class="viewport-block">
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <span class="label label-light">Workflow automation for lean teams</span>
-      <h1>Automate the work that<br><span class="accent">slows your team down.</span></h1>
-      <p>We combine AI and bespoke workflow automation to cut operational friction from your business. Over a decade of cross-industry experience, delivered hands-on with no layers, no heavy process, and no slide decks.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Book a consultation</a>
-        <a href="#services" class="btn btn-ghost">View services</a>
-      </div>
+<!-- HERO -->
+<section class="hero" style="border-bottom:1px solid var(--border);">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Workflow Automation</div>
+    <h1>Automate the work that <em>slows your team</em> down.</h1>
+    <p class="hero-sub">We combine AI and bespoke workflow automation to cut operational friction from your business. Over a decade of cross-industry experience &mdash; no layers, no heavy process.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a consultation</a>
+      <a href="#services" class="btn-ghost">View services &rarr;</a>
     </div>
+  </div>
+  <div class="hero-visual">
+    <svg viewBox="0 0 540 360" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+      <defs>
+        <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+      </defs>
+      <g opacity="0.12">
+        <circle cx="60" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="120" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="180" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="240" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="300" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="360" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="420" cy="60" r="1.5" fill="#f0ece6"/> <circle cx="480" cy="60" r="1.5" fill="#f0ece6"/>
+        <circle cx="60" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="120" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="180" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="240" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="300" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="360" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="420" cy="120" r="1.5" fill="#f0ece6"/> <circle cx="480" cy="120" r="1.5" fill="#f0ece6"/>
+        <circle cx="60" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="120" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="180" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="240" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="300" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="360" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="420" cy="180" r="1.5" fill="#f0ece6"/> <circle cx="480" cy="180" r="1.5" fill="#f0ece6"/>
+        <circle cx="60" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="120" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="180" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="240" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="300" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="360" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="420" cy="240" r="1.5" fill="#f0ece6"/> <circle cx="480" cy="240" r="1.5" fill="#f0ece6"/>
+        <circle cx="60" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="120" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="180" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="240" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="300" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="360" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="420" cy="300" r="1.5" fill="#f0ece6"/> <circle cx="480" cy="300" r="1.5" fill="#f0ece6"/>
+      </g>
+      <rect x="14" y="158" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
+      <rect x="14" y="158" width="3" height="44" rx="2" fill="oklch(72% 0.17 182)"/>
+      <text x="28" y="173" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">TRIGGER</text>
+      <text x="28" y="191" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Webhook</text>
+      <rect x="148" y="158" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
+      <rect x="148" y="158" width="3" height="44" rx="2" fill="#7c6af0"/>
+      <text x="162" y="173" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">FILTER</text>
+      <text x="162" y="191" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">IF: Lead score?</text>
+      <rect x="282" y="88" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
+      <rect x="282" y="88" width="3" height="44" rx="2" fill="#4a9eff"/>
+      <text x="296" y="103" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
+      <text x="296" y="121" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Enrich lead</text>
+      <rect x="282" y="228" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
+      <rect x="282" y="228" width="3" height="44" rx="2" fill="#888"/>
+      <text x="296" y="243" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
+      <text x="296" y="261" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Tag: cold lead</text>
+      <rect x="416" y="88" width="108" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
+      <rect x="416" y="88" width="3" height="44" rx="2" fill="#f0994a"/>
+      <text x="430" y="103" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
+      <text x="430" y="121" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Update CRM</text>
+      <rect x="416" y="158" width="108" height="44" rx="5" fill="#1c1916" stroke="oklch(72% 0.17 182 / 0.3)" stroke-width="1"/>
+      <rect x="416" y="158" width="3" height="44" rx="2" fill="oklch(72% 0.17 182)"/>
+      <text x="430" y="173" fill="oklch(72% 0.17 182)" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">NOTIFY</text>
+      <text x="430" y="191" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Slack alert</text>
+      <rect x="416" y="228" width="108" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
+      <rect x="416" y="228" width="3" height="44" rx="2" fill="#e84393"/>
+      <text x="430" y="243" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
+      <text x="430" y="261" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Send email</text>
+      <text x="267" y="145" fill="#7c6af0" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.05em">YES</text>
+      <text x="268" y="242" fill="#888" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.05em">NO</text>
+      <path d="M120 180 L148 180" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
+      <path d="M254 180 L268 180 L268 110 L282 110" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
+      <path d="M254 180 L268 180 L268 250 L282 250" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
+      <path d="M388 110 L416 110" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
+      <path d="M388 110 L402 110 L402 180 L416 180" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
+      <path d="M388 250 L416 250" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
+      <path id="p1" d="M120 180 L148 180" fill="none"/>
+      <path id="p2" d="M254 180 L268 180 L268 110 L282 110" fill="none"/>
+      <path id="p3" d="M254 180 L268 180 L268 250 L282 250" fill="none"/>
+      <path id="p4" d="M388 110 L416 110" fill="none"/>
+      <path id="p5" d="M388 110 L402 110 L402 180 L416 180" fill="none"/>
+      <path id="p6" d="M388 250 L416 250" fill="none"/>
+      <circle r="3.5" fill="oklch(72% 0.17 182)" filter="url(#glow)" opacity="0.95"><animateMotion dur="1.1s" repeatCount="indefinite" begin="0s"><mpath href="#p1"/></animateMotion></circle>
+      <circle r="3.5" fill="#7c6af0" filter="url(#glow)" opacity="0.95"><animateMotion dur="1.9s" repeatCount="indefinite" begin="0.8s"><mpath href="#p2"/></animateMotion></circle>
+      <circle r="3.5" fill="#888" filter="url(#glow)" opacity="0.75"><animateMotion dur="1.7s" repeatCount="indefinite" begin="1.8s"><mpath href="#p3"/></animateMotion></circle>
+      <circle r="3.5" fill="#f0994a" filter="url(#glow)" opacity="0.95"><animateMotion dur="1.0s" repeatCount="indefinite" begin="1.5s"><mpath href="#p4"/></animateMotion></circle>
+      <circle r="3.5" fill="oklch(72% 0.17 182)" filter="url(#glow)" opacity="0.95"><animateMotion dur="1.6s" repeatCount="indefinite" begin="2.1s"><mpath href="#p5"/></animateMotion></circle>
+      <circle r="3.5" fill="#e84393" filter="url(#glow)" opacity="0.8"><animateMotion dur="1.0s" repeatCount="indefinite" begin="2.6s"><mpath href="#p6"/></animateMotion></circle>
+    </svg>
   </div>
 </section>
 
-<!-- Tech Ribbon -->
-<div class="tech-ribbon" aria-label="Tools and integrations we work with">
-    <div class="tech-ribbon-track">
-      <div class="tech-ribbon-group">
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="Zapier" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/make/9B59B6" alt="Make" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/terraform/844FBA" alt="Terraform" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" alt="Slack" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Microsoft_Office_Teams_%282025%E2%80%93present%29.svg" alt="Microsoft Teams" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/xero/13B5EA" alt="Xero" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/quickbooks/2CA01C" alt="QuickBooks" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt="Stripe" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="Anthropic Claude" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/googlebigquery/669DF6" alt="BigQuery" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt="Mailchimp" width="28" height="28" loading="eager"></div>
-      </div>
-      <div class="tech-ribbon-group" aria-hidden="true">
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/make/9B59B6" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/terraform/844FBA" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Microsoft_Office_Teams_%282025%E2%80%93present%29.svg" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/xero/13B5EA" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/quickbooks/2CA01C" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/openai/ffffff" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/googlebigquery/669DF6" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="" width="28" height="28" loading="eager"></div>
-        <div class="tech-ribbon-item"><img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt="" width="28" height="28" loading="eager"></div>
-      </div>
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <p class="marquee-label">Platforms &amp; integrations</p>
+  <div style="overflow:hidden">
+    <div class="marquee-track" id="marquee">
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="">n8n</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="">Zapier</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/make/9B59B6" alt="">Make</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="">AWS</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="">Google Cloud</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="">Docker</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="">HubSpot</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt="">Stripe</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="">Shopify</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/xero/13B5EA" alt="">Xero</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/openai/ffffff" alt="">OpenAI</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="">Claude</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="">Gmail</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt="">Mailchimp</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/googlebigquery/669DF6" alt="">BigQuery</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="">n8n</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="">Zapier</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/make/9B59B6" alt="">Make</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="">AWS</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="">Google Cloud</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="">Docker</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="">HubSpot</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt="">Stripe</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="">Shopify</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/xero/13B5EA" alt="">Xero</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/openai/ffffff" alt="">OpenAI</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="">Claude</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="">Gmail</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt="">Mailchimp</span>
+      <span class="marquee-item"><img src="https://cdn.simpleicons.org/googlebigquery/669DF6" alt="">BigQuery</span>
     </div>
   </div>
 </div>
-</div>
 
-<!-- Problem -->
-<section id="problem" class="problem">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Why organisations lose time</span>
-      <h2>Most operational friction is invisible until you measure it.</h2>
+<!-- WHY -->
+<section>
+  <div class="section-label">Why organisations lose time</div>
+  <h2>Most operational friction is <em>invisible</em> until you measure it.</h2>
+  <div class="friction-grid">
+    <div class="friction-left">
+      <ul class="friction-list reveal">
+        <li>Repetitive manual admin that eats hours every week.</li>
+        <li>Disconnected systems that don&rsquo;t talk to each other.</li>
+        <li>Teams copying data between tools by hand.</li>
+        <li>Slow handoffs, approvals, and follow-ups that stall work.</li>
+        <li>Inconsistent workflows that depend on who&rsquo;s doing them.</li>
+      </ul>
     </div>
-    <ul class="problem-list">
-      <li>Repetitive manual admin that eats hours every week.</li>
-      <li>Disconnected systems that don&rsquo;t talk to each other.</li>
-      <li>Teams copying data between tools by hand.</li>
-      <li>Slow handoffs, approvals, and follow-ups that stall work.</li>
-      <li>Inconsistent workflows that depend on who&rsquo;s doing them.</li>
-    </ul>
-    <p class="problem-closer">The answer isn&rsquo;t more complexity. It&rsquo;s removing it. We build practical automations behind simple interfaces, so the people using them don&rsquo;t have to think about what&rsquo;s happening underneath.</p>
-  </div>
-</section>
-
-<!-- Process -->
-<section id="process" class="process">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">How we work</span>
-      <h2>Four steps. No theatre.</h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="process-num">01</div>
-        <h3>Discover</h3>
-        <p>Understand the current workflow, friction points, and goals.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">02</div>
-        <h3>Define</h3>
-        <p>Agree the best lean solution, whether AI, automation, integration, or a bespoke workflow.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">03</div>
-        <h3>Build</h3>
-        <p>Implement the workflow, integrations, and logic using the right tools for the job.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">04</div>
-        <h3>Support</h3>
-        <p>Hand over, refine, and optionally continue improving through monthly support.</p>
-      </div>
+    <div class="friction-right reveal reveal-delay-2">
+      <p class="friction-statement">The answer isn&rsquo;t more complexity. It&rsquo;s removing it.</p>
+      <p class="friction-note">We identify where time is actually going, then build the automation that eliminates it &mdash; so your team can focus on the work that only humans can do.</p>
     </div>
   </div>
 </section>
 
-<!-- Services -->
-<section id="services" class="services">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">What we offer</span>
-      <h2>Clear services. Fixed shape. Real outcomes.</h2>
-      <p>Start with a conversation, move to delivery, and stay supported. Pick what fits or tell us what you need.</p>
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-label">How we work</div>
+  <h2>How we work.<br><em>Start to finish.</em></h2>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <span class="step-num">01</span>
+      <div class="step-title">Discover</div>
+      <p class="step-desc">Understand the current workflow, friction points, and goals.</p>
     </div>
-    <div class="services-grid services-grid-half">
+    <div class="process-step reveal reveal-delay-1">
+      <span class="step-num">02</span>
+      <div class="step-title">Define</div>
+      <p class="step-desc">Agree the best lean solution &mdash; whether AI, automation, integration, or bespoke workflow.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-2">
+      <span class="step-num">03</span>
+      <div class="step-title">Build</div>
+      <p class="step-desc">Implement the workflow, integrations, and logic using the right tools for the job.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-3">
+      <span class="step-num">04</span>
+      <div class="step-title">Support</div>
+      <p class="step-desc">Hand over, refine, and optionally continue improving through monthly support.</p>
+    </div>
+  </div>
+</section>
 
-      <div class="service-card service-card-pricing">
-        <div class="service-card-header">
-          <h3>Consultation</h3>
-          <p class="service-card-price">&pound;50</p>
-          <p class="service-card-tagline">Find the friction. Map the fix.</p>
-        </div>
-        <ul class="card-includes">
+<!-- SERVICES -->
+<section id="services">
+  <div class="pricing-header">
+    <div>
+      <div class="section-label">What we offer</div>
+      <h2 style="margin-bottom:0">Clear services. Fixed shape. <em>Real outcomes.</em></h2>
+    </div>
+    <div>
+      <p class="pricing-intro">Start with a conversation, move to delivery, and stay supported. Pick what fits or tell us what you need.</p>
+    </div>
+  </div>
+  <div class="pricing-group reveal">
+    <div class="pricing-group-label">One-time</div>
+    <div class="pricing-grid pricing-grid--2">
+      <div class="pricing-card">
+        <div class="pricing-tag">Consultation</div>
+        <div class="pricing-name">Find the friction.</div>
+        <div class="pricing-price">&pound;50</div>
+        <div class="pricing-cadence">one-time &middot; refunded on any project</div>
+        <ul class="pricing-features">
           <li>1-hour video call</li>
-          <li>&pound;50 deducted from any agreed automation project</li>
           <li>Honest assessment, no obligation</li>
         </ul>
-        <a href="https://calendly.com/your-link" class="btn btn-primary service-card-cta">Book on Calendly</a>
+        <a href="{{ site.calendly }}" class="btn-card" target="_blank" rel="noopener">Book on Calendly</a>
       </div>
-
-      <div class="service-card service-card-pricing">
-        <div class="service-card-header">
-          <h3>Workflow Automation</h3>
-          <p class="service-card-price">&pound;500</p>
-          <p class="service-card-tagline">One workflow. Scoped, built, delivered.</p>
-        </div>
-        <ul class="card-includes">
-          <li>Up to 1 day of collaborative scoping</li>
-          <li>Automated workflow delivered within 2 weeks</li>
-          <li>Full handover and documentation</li>
+      <div class="pricing-card featured">
+        <div class="pricing-tag">Workflow Automation</div>
+        <div class="pricing-name">One workflow, delivered.</div>
+        <div class="pricing-price">&pound;500</div>
+        <div class="pricing-cadence">per workflow</div>
+        <ul class="pricing-features">
+          <li>1 day collaborative scoping</li>
+          <li>Delivered within 2 weeks</li>
+          <li>Full handover &amp; docs</li>
         </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Workflow%20Automation%20enquiry" class="btn btn-primary service-card-cta">Contact us</a>
+        <a href="mailto:{{ site.email }}?subject=Workflow%20Automation%20enquiry" class="btn-card">Contact us</a>
       </div>
-
     </div>
-
-    <h3 class="services-subheading">Monthly automation support retainers</h3>
-
-    <div class="services-grid services-grid-thirds">
-
-      <div class="service-card service-card-pricing">
-        <div class="service-card-header">
-          <h3>Starter</h3>
-          <p class="service-card-price">&pound;200<span>/month</span></p>
-          <p class="service-card-tagline">Keep things running smooth.</p>
-        </div>
-        <ul class="card-includes">
-          <li>Up to 2 hours support</li>
-          <li>Minor workflow tweaks and fixes</li>
-          <li>Email support (48hr response)</li>
+  </div>
+  <div class="pricing-divider">
+    <span class="pricing-divider-label">Monthly retainers</span>
+  </div>
+  <div class="pricing-group reveal">
+    <div class="pricing-grid pricing-grid--3">
+      <div class="pricing-card">
+        <div class="pricing-tag">Starter</div>
+        <div class="pricing-name">Keep things running.</div>
+        <div class="pricing-price">&pound;200/mo</div>
+        <div class="pricing-cadence">up to 2 hrs &middot; email support (48hr)</div>
+        <ul class="pricing-features">
+          <li>Minor workflow tweaks &amp; fixes</li>
         </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Starter%20retainer%20enquiry" class="btn btn-primary service-card-cta">Contact us</a>
+        <a href="mailto:{{ site.email }}?subject=Starter%20retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
-
-      <div class="service-card service-card-pricing">
-        <div class="service-card-header">
-          <h3>Growth</h3>
-          <p class="service-card-price">&pound;500<span>/month</span></p>
-          <p class="service-card-tagline">Improve, build, repeat.</p>
-        </div>
-        <ul class="card-includes">
-          <li>Up to 5 hours support</li>
-          <li>Workflow improvements and small builds</li>
-          <li>Priority support (24hr response)</li>
+      <div class="pricing-card">
+        <div class="pricing-tag">Growth</div>
+        <div class="pricing-name">Improve, build, repeat.</div>
+        <div class="pricing-price">&pound;500/mo</div>
+        <div class="pricing-cadence">up to 5 hrs &middot; priority support (24hr)</div>
+        <ul class="pricing-features">
+          <li>Workflow improvements &amp; small builds</li>
           <li>Monthly optimisation review</li>
         </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Growth%20retainer%20enquiry" class="btn btn-primary service-card-cta">Contact us</a>
+        <a href="mailto:{{ site.email }}?subject=Growth%20retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
-
-      <div class="service-card service-card-pricing">
-        <div class="service-card-header">
-          <h3>Scale</h3>
-          <p class="service-card-price">&pound;1,000<span>/month</span></p>
-          <p class="service-card-tagline">Strategic automation, embedded.</p>
-        </div>
-        <ul class="card-includes">
-          <li>Up to 12 hours support</li>
-          <li>New automations and advanced improvements</li>
-          <li>Same-day priority support</li>
-          <li>Monthly strategy and optimisation call</li>
+      <div class="pricing-card">
+        <div class="pricing-tag">Scale</div>
+        <div class="pricing-name">Strategic automation.</div>
+        <div class="pricing-price">&pound;1,000/mo</div>
+        <div class="pricing-cadence">up to 12 hrs &middot; same-day priority</div>
+        <ul class="pricing-features">
+          <li>New automations &amp; advanced builds</li>
+          <li>Monthly strategy call</li>
         </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Scale%20retainer%20enquiry" class="btn btn-primary service-card-cta">Contact us</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Proof -->
-<section id="proof" class="proof">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">What we automate</span>
-      <h2>Examples of the work we take on.</h2>
-      <p>Concrete automation use cases we deliver for SMEs and growing teams. Every engagement starts with understanding your specific workflow.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Leads and CRM</h3>
-        <p>Capture leads from forms, email, and enquiries, then route them into your CRM with the right tags, assignments, and follow-up triggers. No more manual data entry between tools.</p>
-      </div>
-      <div class="service-card">
-        <h3>Finance and admin</h3>
-        <p>Automate invoice generation, payment reconciliation, and accounting handoffs between Stripe, Xero, QuickBooks, and your internal systems.</p>
-      </div>
-      <div class="service-card">
-        <h3>Team operations</h3>
-        <p>Streamline notifications, approvals, onboarding steps, and internal handoffs across Slack, Teams, email, and your project tools.</p>
-      </div>
-      <div class="service-card">
-        <h3>Reporting and data</h3>
-        <p>Sync data between systems, prep dashboards, and generate scheduled reports so your team spends less time pulling numbers and more time acting on them.</p>
-      </div>
-      <div class="service-card">
-        <h3>E-commerce and customer ops</h3>
-        <p>Connect Shopify or WooCommerce with fulfilment, support, and marketing tools. Automate order updates, stock alerts, and post-purchase workflows.</p>
+        <a href="mailto:{{ site.email }}?subject=Scale%20retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Platforms & Integrations -->
-<section id="platforms" class="platforms">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Platforms and integrations</span>
-      <h2>The tools we work with.</h2>
+<!-- USE CASES -->
+<section>
+  <div class="section-label">What we automate</div>
+  <h2>Examples of the work<br>we take on.</h2>
+  <div class="usecases-grid">
+    <div class="usecase-item reveal">
+      <div class="usecase-icon">01</div>
+      <div class="usecase-title">Leads &amp; CRM</div>
+      <p class="usecase-desc">Capture leads from forms, email, and enquiries &mdash; route them into your CRM with the right tags, assignments, and follow-up triggers.</p>
     </div>
-    <div class="platform-groups">
-      <div class="platform-group">
-        <h3>Automation</h3>
-        <ul class="platform-pills">
-          <li><img src="https://cdn.simpleicons.org/n8n" alt="">n8n</li>
-          <li><img src="https://cdn.simpleicons.org/zapier" alt="">Zapier</li>
-          <li><img src="https://cdn.simpleicons.org/make" alt="">Make</li>
-        </ul>
-      </div>
-      <div class="platform-group">
-        <h3>Cloud and infrastructure</h3>
-        <ul class="platform-pills">
-          <li><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="">AWS</li>
-          <li><img src="https://cdn.simpleicons.org/googlecloud" alt="">GCP</li>
-          <li><img src="https://cdn.simpleicons.org/docker" alt="">Docker</li>
-          <li><img src="https://cdn.simpleicons.org/terraform" alt="">Terraform</li>
-        </ul>
-      </div>
-      <div class="platform-group">
-        <h3>Business tools</h3>
-        <ul class="platform-pills">
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="">Salesforce</li>
-          <li><img src="https://cdn.simpleicons.org/hubspot" alt="">HubSpot</li>
-          <li><img src="https://cdn.simpleicons.org/zoho" alt="">Zoho CRM</li>
-          <li><img src="https://cdn.simpleicons.org/gmail" alt="">Gmail</li>
-          <li><img src="https://cdn.simpleicons.org/microsoftoutlook" alt="">Outlook</li>
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" alt="">Slack</li>
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Microsoft_Office_Teams_%282025%E2%80%93present%29.svg" alt="">Teams</li>
-          <li><img src="https://cdn.simpleicons.org/mailchimp" alt="">Mailchimp</li>
-          <li>ActiveCampaign</li>
-          <li><img src="https://cdn.simpleicons.org/xero" alt="">Xero</li>
-          <li><img src="https://cdn.simpleicons.org/quickbooks" alt="">QuickBooks</li>
-          <li>Sage</li>
-          <li><img src="https://cdn.simpleicons.org/stripe" alt="">Stripe</li>
-          <li><img src="https://cdn.simpleicons.org/paypal" alt="">PayPal</li>
-          <li><img src="https://cdn.simpleicons.org/shopify" alt="">Shopify</li>
-          <li><img src="https://cdn.simpleicons.org/woocommerce" alt="">WooCommerce</li>
-        </ul>
-      </div>
-      <div class="platform-group">
-        <h3>AI and data</h3>
-        <ul class="platform-pills">
-          <li><img src="https://cdn.simpleicons.org/openai/ffffff" alt="">OpenAI</li>
-          <li><img src="https://cdn.simpleicons.org/anthropic" alt="">Claude</li>
-          <li><img src="https://cdn.simpleicons.org/googleanalytics" alt="">Google Analytics</li>
-          <li><img src="https://cdn.simpleicons.org/googlebigquery" alt="">BigQuery</li>
-        </ul>
-      </div>
+    <div class="usecase-item reveal reveal-delay-1">
+      <div class="usecase-icon">02</div>
+      <div class="usecase-title">Finance &amp; Admin</div>
+      <p class="usecase-desc">Automate invoice generation, payment reconciliation, and accounting handoffs between Stripe, Xero, QuickBooks, and your internal systems.</p>
     </div>
-    <p class="platform-approach">API-first integrations, event-driven workflows, webhooks, scheduled automations, and custom scripts where needed.</p>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about" class="about">
-  <div class="container">
-    <div class="about-grid about-grid-single">
-      <div class="about-text">
-        <span class="label">Who we are</span>
-        <h2>Change agents. Not consultants who leave you with a slide deck.</h2>
-        <p>Smooth Vector is deliberately lean. No account managers, no layers, no theatre. You work directly with the people designing and building your automations.</p>
-        <p>We bring over a decade of experience across multiple industries, from operational process design to technical delivery. We&rsquo;re driven by a simple belief: teams should spend their time on work where human judgement, creativity, and relationships matter most.</p>
-        <ul class="about-tags">
-          <li>Workflow automation</li>
-          <li>AI-enabled operations</li>
-          <li>Lean delivery</li>
-          <li>Systems integration</li>
-          <li>Continuous improvement</li>
-        </ul>
-      </div>
+    <div class="usecase-item reveal reveal-delay-2">
+      <div class="usecase-icon">03</div>
+      <div class="usecase-title">Team Ops</div>
+      <p class="usecase-desc">Streamline notifications, approvals, onboarding steps, and internal handoffs across Slack, Teams, email, and your project tools.</p>
+    </div>
+    <div class="usecase-item reveal reveal-delay-3">
+      <div class="usecase-icon">04</div>
+      <div class="usecase-title">Reporting &amp; Data</div>
+      <p class="usecase-desc">Sync data between systems, prep dashboards, and generate scheduled reports so your team spends less time pulling numbers.</p>
+    </div>
+    <div class="usecase-item reveal reveal-delay-4">
+      <div class="usecase-icon">05</div>
+      <div class="usecase-title">E-commerce</div>
+      <p class="usecase-desc">Connect Shopify or WooCommerce with fulfilment, support, and marketing tools. Automate order updates, stock alerts, and post-purchase workflows.</p>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="contact-inner">
-      <span class="label label-light">Start here</span>
-      <h2>Start with a consultation.</h2>
-      <p>Book a 1-hour consultation. We'll map out where automation can save your team the most time — if you move ahead, the fee comes off your first project.</p>
-      <a href="https://calendly.com/your-link" class="btn btn-primary">Book a consultation</a>
-      <p class="contact-secondary">Or email us at <a href="mailto:hello@smoothvectorsolutions.com">hello@smoothvectorsolutions.com</a></p>
+<!-- TOOLS -->
+<section>
+  <div class="section-label">Platforms and integrations</div>
+  <h2>The tools<br>we work with.</h2>
+  <div class="tools-grid">
+    <div class="tools-category">
+      <div class="tools-cat-label">Automation</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt=""> n8n</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt=""> Zapier</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/make/9B59B6" alt=""> Make</div>
+    </div>
+    <div class="tools-category">
+      <div class="tools-cat-label">Cloud &amp; Infrastructure</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt=""> AWS</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt=""> GCP</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/docker/2496ED" alt=""> Docker</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/terraform/844FBA" alt=""> Terraform</div>
+    </div>
+    <div class="tools-category">
+      <div class="tools-cat-label">Business Tools</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt=""> HubSpot</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt=""> Gmail</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/xero/13B5EA" alt=""> Xero</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt=""> Stripe</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt=""> Shopify</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt=""> Mailchimp</div>
+    </div>
+    <div class="tools-category">
+      <div class="tools-cat-label">AI &amp; Data</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/openai/ffffff" alt=""> OpenAI</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt=""> Claude</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/googlebigquery/669DF6" alt=""> BigQuery</div>
+      <div class="tool-item"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt=""> Google Analytics</div>
     </div>
   </div>
+  <p class="tools-footer">API-first integrations &middot; Event-driven workflows &middot; Webhooks &middot; Scheduled automations &middot; Custom scripts</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">Who we are</div>
+  <h2>Change agents. <em>Not consultants</em> who leave you with a slide deck.</h2>
+  <div class="about-left reveal">
+    <p class="about-text">Smooth Vector is deliberately lean. No account managers, no layers, no theatre. You work directly with the people designing and building your automations.</p>
+    <p class="about-text">We bring over a decade of experience across multiple industries &mdash; from operational process design to technical delivery. We&rsquo;re driven by a simple belief: teams should spend their time on work where human judgement, creativity, and relationships matter most.</p>
+    <div class="about-values">
+      <span class="value-tag">Workflow automation</span>
+      <span class="value-tag">AI-enabled operations</span>
+      <span class="value-tag">Lean delivery</span>
+      <span class="value-tag">Systems integration</span>
+      <span class="value-tag">Continuous improvement</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="section-label" style="justify-content:center;margin-bottom:20px">Start here</div>
+  <h2>Start with a <em>consultation.</em></h2>
+  <p>Book a 1-hour consultation. We&rsquo;ll map out where automation can save your team the most time &mdash; if you move ahead, the fee comes off your first project.</p>
+  <div class="cta-actions">
+    <a href="{{ site.calendly }}" class="btn-primary" target="_blank" rel="noopener">Book on Calendly</a>
+    <a href="mailto:{{ site.email }}" class="btn-ghost">Email us directly &rarr;</a>
+  </div>
+  <p class="cta-email">Or reach us at <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 </section>

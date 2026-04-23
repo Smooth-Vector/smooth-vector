@@ -1,10 +1,13 @@
 title: Smooth Vector Solutions
-description: Strategic consultancy for modern businesses.
+description: Workflow automation and AI-enabled operations for lean businesses.
+email: hello@smoothvectorsolutions.com
+calendly: https://calendly.com/your-link
 baseurl: ""
-url: ""
+url: "https://www.smoothvectorsolutions.com"
 permalink: pretty
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - "new version"
