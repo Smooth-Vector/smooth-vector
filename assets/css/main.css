@@ -265,15 +265,22 @@ nav {
    Hero
    =========================== */
 
+.viewport-block {
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero {
-  min-height: calc(100vh - 4rem);
-  min-height: calc(100svh - 4rem); /* subtract ribbon height so hero + ribbon = full viewport */
+  flex: 1;
+  min-height: 0;
   display: flex;
   align-items: center;
   background: var(--dark);
   position: relative;
   overflow: hidden;
-  padding: 8rem 0 6rem;
+  padding: 8rem 0 4rem;
 }
 
 .hero::before {
@@ -696,12 +703,24 @@ nav {
 }
 
 .platform-pills li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--accent);
   background: rgba(79, 70, 229, 0.08);
   padding: 0.375rem 0.75rem;
   border-radius: 999px;
+}
+
+.platform-pills li img {
+  height: 14px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.65;
+  filter: saturate(0.5);
 }
 
 .platform-approach {
@@ -789,6 +808,20 @@ nav {
   margin-bottom: 0;
 }
 
+.contact-details {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  text-align: center;
+}
+
+.contact-details p {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
 .contact-secondary a {
   color: var(--accent-light);
   text-decoration: none;
@@ -853,9 +886,7 @@ footer {
   }
 
   .hero {
-    min-height: calc(100vh - 4rem);
-    min-height: calc(100svh - 4rem);
-    padding: 7rem 0 4rem;
+    padding: 6rem 0 3rem;
   }
 
   .services-grid-half,
