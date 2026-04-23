@@ -273,7 +273,11 @@ nav {
   min-height: 0;
   display: flex;
   align-items: center;
-  background: url('/assets/images/bgimage-sv.webp') center center / cover no-repeat;
+  background-image: url('../images/bgimage-sv.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--dark);
   position: relative;
   overflow: hidden;
   padding: 8rem 0 4rem;
@@ -283,7 +287,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(11, 15, 26, 0.82) 45%, rgba(11, 15, 26, 0.35) 100%);
+  background: linear-gradient(to right, rgba(11, 15, 26, 0.82) 45%, rgba(11, 15, 26, 0.75) 100%);
 }
 
 .hero::after {
