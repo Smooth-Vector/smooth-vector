@@ -194,14 +194,7 @@ nav {
    =========================== */
 
 .tech-ribbon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background: rgba(11, 15, 26, 0.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--dark-2);
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   overflow: hidden;
   padding: 1.125rem 0;
@@ -222,8 +215,6 @@ nav {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 2.75rem;
-  padding-right: 2.75rem;
 }
 
 .tech-ribbon-item {
@@ -232,6 +223,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 28px;
+  margin-right: 2.75rem;
 }
 
 .tech-ribbon-item img {
@@ -274,9 +266,8 @@ nav {
    =========================== */
 
 .hero {
-  min-height: 100vh;
-  min-height: -webkit-fill-available; /* iOS Safari < 15 */
-  min-height: 100svh; /* iOS Safari 15.4+, modern browsers */
+  min-height: calc(100vh - 4rem);
+  min-height: calc(100svh - 4rem); /* subtract ribbon height so hero + ribbon = full viewport */
   display: flex;
   align-items: center;
   background: var(--dark);
@@ -862,7 +853,9 @@ footer {
   }
 
   .hero {
-    padding: 7rem 0 6rem;
+    min-height: calc(100vh - 4rem);
+    min-height: calc(100svh - 4rem);
+    padding: 7rem 0 4rem;
   }
 
   .services-grid-half,
