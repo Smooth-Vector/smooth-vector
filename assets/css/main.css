@@ -240,24 +240,11 @@ nav {
   height: 28px;
   width: auto;
   object-fit: contain;
-  /* normalise all logos to white silhouettes on the dark background */
-  filter: brightness(0) invert(1);
-  opacity: 0.4;
-  transition: opacity 0.25s ease, filter 0.25s ease;
+  opacity: 0.65;
+  transition: opacity 0.25s ease;
 }
 
 .tech-ribbon-item:hover img {
-  opacity: 0.85;
-}
-
-/* colour logos: restore brand colours on hover */
-.tech-ribbon-item--color img {
-  filter: brightness(0) invert(1);
-  opacity: 0.4;
-}
-
-.tech-ribbon-item--color:hover img {
-  filter: none;
   opacity: 1;
 }
 
