@@ -232,12 +232,6 @@ nav {
   align-items: center;
   justify-content: center;
   height: 28px;
-  opacity: 0.4;
-  transition: opacity 0.25s ease;
-}
-
-.tech-ribbon-item:hover {
-  opacity: 0.9;
 }
 
 .tech-ribbon-item img {
@@ -245,6 +239,25 @@ nav {
   height: 28px;
   width: auto;
   object-fit: contain;
+  /* normalise all logos to white silhouettes on the dark background */
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.tech-ribbon-item:hover img {
+  opacity: 0.85;
+}
+
+/* colour logos: restore brand colours on hover */
+.tech-ribbon-item--color img {
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+}
+
+.tech-ribbon-item--color:hover img {
+  filter: none;
+  opacity: 1;
 }
 
 @keyframes ribbon-scroll {
@@ -262,7 +275,8 @@ nav {
 
 .hero {
   min-height: 100vh;
-  min-height: 100svh; /* excludes mobile browser chrome — fixes ribbon visibility */
+  min-height: -webkit-fill-available; /* iOS Safari < 15 */
+  min-height: 100svh; /* iOS Safari 15.4+, modern browsers */
   display: flex;
   align-items: center;
   background: var(--dark);
