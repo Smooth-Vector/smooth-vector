@@ -9,15 +9,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
+<style>body{opacity:0;transition:opacity 0.3s ease;}</style>
+<script>document.fonts.ready.then(()=>{document.body.style.opacity='1';});</script>
 </head>
 <body>
 
 <nav>
   <a href="#" class="nav-logo">
     <span class="nav-logo-mark"></span>
-    Smooth Vector
+    Smooth Vector Solutions
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <ul class="nav-links" id="nav-menu">
     <li><a href="#services">Services</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#about">About</a></li>
@@ -28,7 +35,6 @@
 <!-- HERO -->
 <section class="hero" style="border-bottom:1px solid var(--border);">
   <div class="hero-content">
-    <div class="hero-eyebrow">Workflow Automation</div>
     <h1>Automate the work that <em>slows your team</em> down.</h1>
     <p class="hero-sub">We combine AI and bespoke workflow automation to cut operational friction from your business. Over a decade of cross-industry experience &mdash; no layers, no heavy process.</p>
     <div class="hero-actions">
@@ -50,34 +56,25 @@
       </g>
       <rect x="14" y="158" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
       <rect x="14" y="158" width="3" height="44" rx="2" fill="oklch(72% 0.17 182)"/>
-      <text x="28" y="173" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">TRIGGER</text>
-      <text x="28" y="191" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Webhook</text>
+      <text x="28" y="184" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Trigger</text>
       <rect x="148" y="158" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
       <rect x="148" y="158" width="3" height="44" rx="2" fill="#7c6af0"/>
-      <text x="162" y="173" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">FILTER</text>
-      <text x="162" y="191" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">IF: Lead score?</text>
+      <text x="162" y="184" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Filter</text>
       <rect x="282" y="88" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
       <rect x="282" y="88" width="3" height="44" rx="2" fill="#4a9eff"/>
-      <text x="296" y="103" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
-      <text x="296" y="121" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Enrich lead</text>
+      <text x="296" y="114" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Enrich lead</text>
       <rect x="282" y="228" width="106" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
       <rect x="282" y="228" width="3" height="44" rx="2" fill="#888"/>
-      <text x="296" y="243" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
-      <text x="296" y="261" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Tag: cold lead</text>
+      <text x="296" y="254" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Tag: cold lead</text>
       <rect x="416" y="88" width="108" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
       <rect x="416" y="88" width="3" height="44" rx="2" fill="#f0994a"/>
-      <text x="430" y="103" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
-      <text x="430" y="121" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Update CRM</text>
+      <text x="430" y="114" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Update CRM</text>
       <rect x="416" y="158" width="108" height="44" rx="5" fill="#1c1916" stroke="oklch(72% 0.17 182 / 0.3)" stroke-width="1"/>
       <rect x="416" y="158" width="3" height="44" rx="2" fill="oklch(72% 0.17 182)"/>
-      <text x="430" y="173" fill="oklch(72% 0.17 182)" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">NOTIFY</text>
-      <text x="430" y="191" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Slack alert</text>
+      <text x="430" y="184" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Notify</text>
       <rect x="416" y="228" width="108" height="44" rx="5" fill="#1c1916" stroke="rgba(240,236,230,0.1)" stroke-width="1"/>
       <rect x="416" y="228" width="3" height="44" rx="2" fill="#e84393"/>
-      <text x="430" y="243" fill="#5a5550" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.08em">ACTION</text>
-      <text x="430" y="261" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="11" font-weight="500">Send email</text>
-      <text x="267" y="145" fill="#7c6af0" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.05em">YES</text>
-      <text x="268" y="242" fill="#888" font-family="DM Mono,monospace" font-size="8" letter-spacing="0.05em">NO</text>
+      <text x="430" y="254" fill="#f0ece6" font-family="DM Sans,sans-serif" font-size="12" font-weight="500">Send email</text>
       <path d="M120 180 L148 180" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
       <path d="M254 180 L268 180 L268 110 L282 110" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
       <path d="M254 180 L268 180 L268 250 L282 250" stroke="rgba(240,236,230,0.13)" stroke-width="1.5" fill="none"/>
@@ -143,7 +140,7 @@
 <!-- WHY -->
 <section>
   <div class="section-label">Why organisations lose time</div>
-  <h2>Most operational friction is <em>invisible</em> until you measure it.</h2>
+  <h2>Most teams are slow for reasons <em>they've stopped noticing</em>.</h2>
   <div class="friction-grid">
     <div class="friction-left">
       <ul class="friction-list reveal">
@@ -201,9 +198,8 @@
     </div>
   </div>
   <div class="pricing-group reveal">
-    <div class="pricing-group-label">One-time</div>
-    <div class="pricing-grid pricing-grid--2">
-      <div class="pricing-card">
+    <div class="pricing-grid pricing-grid--3">
+      <div class="pricing-card selected">
         <div class="pricing-tag">Consultation</div>
         <div class="pricing-name">Find the friction.</div>
         <div class="pricing-price">&pound;50</div>
@@ -214,7 +210,7 @@
         </ul>
         <a href="https://calendly.com/your-link" class="btn-card" target="_blank" rel="noopener">Book on Calendly</a>
       </div>
-      <div class="pricing-card featured">
+      <div class="pricing-card">
         <div class="pricing-tag">Workflow Automation</div>
         <div class="pricing-name">One workflow, delivered.</div>
         <div class="pricing-price">&pound;500</div>
@@ -226,44 +222,17 @@
         </ul>
         <a href="mailto:hello@smoothvectorsolutions.com?subject=Workflow%20Automation%20enquiry" class="btn-card">Contact us</a>
       </div>
-    </div>
-  </div>
-  <div class="pricing-divider">
-    <span class="pricing-divider-label">Monthly retainers</span>
-  </div>
-  <div class="pricing-group reveal">
-    <div class="pricing-grid pricing-grid--3">
       <div class="pricing-card">
-        <div class="pricing-tag">Starter</div>
-        <div class="pricing-name">Keep things running.</div>
-        <div class="pricing-price">&pound;200/mo</div>
-        <div class="pricing-cadence">up to 2 hrs &middot; email support (48hr)</div>
+        <div class="pricing-tag">Monthly Retainer</div>
+        <div class="pricing-name">Ongoing support.</div>
+        <div class="pricing-price">&pound;POA</div>
+        <div class="pricing-cadence">monthly contract &middot; cancel anytime</div>
         <ul class="pricing-features">
-          <li>Minor workflow tweaks &amp; fixes</li>
+          <li>Unlimited projects &amp; workflows</li>
+          <li>Ongoing support &amp; improvements</li>
+          <li>Monthly contract, no lock-in</li>
         </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Starter%20retainer%20enquiry" class="btn-card">Contact us</a>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-tag">Growth</div>
-        <div class="pricing-name">Improve, build, repeat.</div>
-        <div class="pricing-price">&pound;500/mo</div>
-        <div class="pricing-cadence">up to 5 hrs &middot; priority support (24hr)</div>
-        <ul class="pricing-features">
-          <li>Workflow improvements &amp; small builds</li>
-          <li>Monthly optimisation review</li>
-        </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Growth%20retainer%20enquiry" class="btn-card">Contact us</a>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-tag">Scale</div>
-        <div class="pricing-name">Strategic automation.</div>
-        <div class="pricing-price">&pound;1,000/mo</div>
-        <div class="pricing-cadence">up to 12 hrs &middot; same-day priority</div>
-        <ul class="pricing-features">
-          <li>New automations &amp; advanced builds</li>
-          <li>Monthly strategy call</li>
-        </ul>
-        <a href="mailto:hello@smoothvectorsolutions.com?subject=Scale%20retainer%20enquiry" class="btn-card">Contact us</a>
+        <a href="mailto:hello@smoothvectorsolutions.com?subject=Retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
     </div>
   </div>
@@ -305,7 +274,7 @@
 <!-- TOOLS -->
 <section>
   <div class="section-label">Platforms and integrations</div>
-  <h2>The tools<br>we work with.</h2>
+  <h2>Some of the tools<br>we work with.</h2>
   <div class="tools-grid">
     <div class="tools-category">
       <div class="tools-cat-label">Automation</div>
@@ -337,16 +306,15 @@
       <div class="tool-item"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt=""> Google Analytics</div>
     </div>
   </div>
-  <p class="tools-footer">API-first integrations &middot; Event-driven workflows &middot; Webhooks &middot; Scheduled automations &middot; Custom scripts</p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-label">Who we are</div>
-  <h2>Change agents. <em>Not consultants</em> who leave you with a slide deck.</h2>
+  <h2>Expertise delivered <em>directly</em>.</h2>
   <div class="about-left reveal">
-    <p class="about-text">Smooth Vector is deliberately lean. No account managers, no layers, no theatre. You work directly with the people designing and building your automations.</p>
-    <p class="about-text">We bring over a decade of experience across multiple industries &mdash; from operational process design to technical delivery. We&rsquo;re driven by a simple belief: teams should spend their time on work where human judgement, creativity, and relationships matter most.</p>
+    <p class="about-text">Smooth Vector is deliberately small. You deal directly with the person scoping and building your automations &mdash; no layers, no handoffs, no unnecessary overhead.</p>
+    <p class="about-text">Over a decade of cross-industry experience, from operational process design to technical delivery. Driven by a simple belief: teams should spend their time on work where human judgement, creativity, and relationships matter most.</p>
     <div class="about-values">
       <span class="value-tag">Workflow automation</span>
       <span class="value-tag">AI-enabled operations</span>
@@ -366,7 +334,6 @@
     <a href="https://calendly.com/your-link" class="btn-primary" target="_blank" rel="noopener">Book on Calendly</a>
     <a href="mailto:hello@smoothvectorsolutions.com" class="btn-ghost">Email us directly &rarr;</a>
   </div>
-  <p class="cta-email">Or reach us at <a href="mailto:hello@smoothvectorsolutions.com">hello@smoothvectorsolutions.com</a></p>
 </section>
 
 <footer>
@@ -376,7 +343,8 @@
   </a>
   <div class="footer-meta">
     &copy; <span id="year"></span> Smooth Vector Solutions. All rights reserved.<br>
-    Tech Shapers Ltd &middot; Company No. 15921823 &middot; Chelmsford CM1 1JG
+    Tech Shapers Ltd &middot; Company No. 15921823<br>
+    The Coval Workspace, Chelmsford CM1 1JE
   </div>
 </footer>
 

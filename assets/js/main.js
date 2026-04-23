@@ -1,3 +1,36 @@
+// Mobile nav toggle
+const navEl = document.querySelector('nav');
+const navToggle = document.querySelector('.nav-toggle');
+if (navEl && navToggle) {
+  const closeMenu = () => {
+    navEl.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+  navToggle.addEventListener('click', () => {
+    const isOpen = navEl.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  navEl.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && navEl.classList.contains('nav-open')) closeMenu();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024 && navEl.classList.contains('nav-open')) closeMenu();
+  });
+}
+
+// Pricing card selection
+document.querySelectorAll('.pricing-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.querySelectorAll('.pricing-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  });
+});
+
 // Scroll reveal
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
@@ -19,9 +52,9 @@ const accentMap = {
 };
 
 const themeMap = {
-  dark:  { bg:'#0b0a09', bg2:'#141210', bg3:'#1c1916', fg:'#f0ece6', fg2:'#8a8279', fg3:'#4a4540' },
+  dark:  { bg:'#181512', bg2:'#221e1a', bg3:'#2c2622', fg:'#f0ece6', fg2:'#c0b098', fg3:'#887868' },
   light: { bg:'#f8f5f1', bg2:'#f0ece6', bg3:'#e8e3dc', fg:'#1c1916', fg2:'#6b6359', fg3:'#a09890' },
-  warm:  { bg:'#100d0a', bg2:'#1a1410', bg3:'#241c14', fg:'#f5ede0', fg2:'#9a8878', fg3:'#5a4a3a' },
+  warm:  { bg:'#24211e', bg2:'#2e2824', bg3:'#383028', fg:'#f5ede0', fg2:'#c8b8a8', fg3:'#8a7a6a' },
 };
 
 function applyTweaks() {
