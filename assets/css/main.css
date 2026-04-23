@@ -199,18 +199,19 @@ nav {
   left: 0;
   right: 0;
   z-index: 2;
-  background: rgba(19, 25, 41, 0.6);
+  background: rgba(11, 15, 26, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
   overflow: hidden;
-  padding: 1.25rem 0;
+  padding: 1.125rem 0;
 }
 
 .tech-ribbon-track {
   display: flex;
   width: max-content;
-  animation: ribbon-scroll 40s linear infinite;
+  will-change: transform;
+  animation: ribbon-scroll 50s linear infinite;
 }
 
 .tech-ribbon-track:hover {
@@ -221,8 +222,8 @@ nav {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 3rem;
-  padding-right: 3rem;
+  gap: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .tech-ribbon-item {
@@ -230,36 +231,28 @@ nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
-  opacity: 0.6;
-  transition: opacity var(--transition);
+  height: 28px;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
 }
 
 .tech-ribbon-item:hover {
-  opacity: 1;
-}
-
-.tech-ribbon-item span {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 0.04em;
-  white-space: nowrap;
+  opacity: 0.9;
 }
 
 .tech-ribbon-item img {
   display: block;
-  max-height: 100%;
+  height: 28px;
   width: auto;
   object-fit: contain;
 }
 
 @keyframes ribbon-scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -269,6 +262,7 @@ nav {
 
 .hero {
   min-height: 100vh;
+  min-height: 100svh; /* excludes mobile browser chrome — fixes ribbon visibility */
   display: flex;
   align-items: center;
   background: var(--dark);
