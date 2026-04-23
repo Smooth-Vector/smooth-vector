@@ -159,11 +159,20 @@ nav {
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 700;
   font-size: 1.0625rem;
   color: var(--white);
   text-decoration: none;
   letter-spacing: -0.02em;
+}
+
+.nav-logo {
+  display: block;
+  height: 28px;
+  width: auto;
 }
 
 .nav-links {
