@@ -1,8 +1,29 @@
----
-layout: default
-title: Workflow Automation for Lean Teams
-description: We combine AI and bespoke workflow automation to cut operational friction from your business. Over a decade of cross-industry experience, no layers, no heavy process.
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workflow Automation for Lean Teams — Smooth Vector Solutions</title>
+<meta name="description" content="We combine AI and bespoke workflow automation to cut operational friction from your business. Over a decade of cross-industry experience, no layers, no heavy process.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">
+    <span class="nav-logo-mark"></span>
+    Smooth Vector
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Book a consultation</a></li>
+  </ul>
+</nav>
 
 <!-- HERO -->
 <section class="hero" style="border-bottom:1px solid var(--border);">
@@ -191,7 +212,7 @@ description: We combine AI and bespoke workflow automation to cut operational fr
           <li>1-hour video call</li>
           <li>Honest assessment, no obligation</li>
         </ul>
-        <a href="{{ site.calendly }}" class="btn-card" target="_blank" rel="noopener">Book on Calendly</a>
+        <a href="https://calendly.com/your-link" class="btn-card" target="_blank" rel="noopener">Book on Calendly</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-tag">Workflow Automation</div>
@@ -203,7 +224,7 @@ description: We combine AI and bespoke workflow automation to cut operational fr
           <li>Delivered within 2 weeks</li>
           <li>Full handover &amp; docs</li>
         </ul>
-        <a href="mailto:{{ site.email }}?subject=Workflow%20Automation%20enquiry" class="btn-card">Contact us</a>
+        <a href="mailto:hello@smoothvectorsolutions.com?subject=Workflow%20Automation%20enquiry" class="btn-card">Contact us</a>
       </div>
     </div>
   </div>
@@ -220,7 +241,7 @@ description: We combine AI and bespoke workflow automation to cut operational fr
         <ul class="pricing-features">
           <li>Minor workflow tweaks &amp; fixes</li>
         </ul>
-        <a href="mailto:{{ site.email }}?subject=Starter%20retainer%20enquiry" class="btn-card">Contact us</a>
+        <a href="mailto:hello@smoothvectorsolutions.com?subject=Starter%20retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-tag">Growth</div>
@@ -231,7 +252,7 @@ description: We combine AI and bespoke workflow automation to cut operational fr
           <li>Workflow improvements &amp; small builds</li>
           <li>Monthly optimisation review</li>
         </ul>
-        <a href="mailto:{{ site.email }}?subject=Growth%20retainer%20enquiry" class="btn-card">Contact us</a>
+        <a href="mailto:hello@smoothvectorsolutions.com?subject=Growth%20retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-tag">Scale</div>
@@ -242,7 +263,7 @@ description: We combine AI and bespoke workflow automation to cut operational fr
           <li>New automations &amp; advanced builds</li>
           <li>Monthly strategy call</li>
         </ul>
-        <a href="mailto:{{ site.email }}?subject=Scale%20retainer%20enquiry" class="btn-card">Contact us</a>
+        <a href="mailto:hello@smoothvectorsolutions.com?subject=Scale%20retainer%20enquiry" class="btn-card">Contact us</a>
       </div>
     </div>
   </div>
@@ -342,8 +363,51 @@ description: We combine AI and bespoke workflow automation to cut operational fr
   <h2>Start with a <em>consultation.</em></h2>
   <p>Book a 1-hour consultation. We&rsquo;ll map out where automation can save your team the most time &mdash; if you move ahead, the fee comes off your first project.</p>
   <div class="cta-actions">
-    <a href="{{ site.calendly }}" class="btn-primary" target="_blank" rel="noopener">Book on Calendly</a>
-    <a href="mailto:{{ site.email }}" class="btn-ghost">Email us directly &rarr;</a>
+    <a href="https://calendly.com/your-link" class="btn-primary" target="_blank" rel="noopener">Book on Calendly</a>
+    <a href="mailto:hello@smoothvectorsolutions.com" class="btn-ghost">Email us directly &rarr;</a>
   </div>
-  <p class="cta-email">Or reach us at <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p class="cta-email">Or reach us at <a href="mailto:hello@smoothvectorsolutions.com">hello@smoothvectorsolutions.com</a></p>
 </section>
+
+<footer>
+  <a href="#" class="footer-brand">
+    <span class="footer-brand-mark"></span>
+    Smooth Vector Solutions
+  </a>
+  <div class="footer-meta">
+    &copy; <span id="year"></span> Smooth Vector Solutions. All rights reserved.<br>
+    Tech Shapers Ltd &middot; Company No. 15921823 &middot; Chelmsford CM1 1JG
+  </div>
+</footer>
+
+<div id="tweaks-panel">
+  <div class="tweaks-header">Tweaks</div>
+  <div class="tweaks-body">
+    <div class="tweak-row">
+      <label>Theme</label>
+      <select id="tweak-theme">
+        <option value="dark">Dark (default)</option>
+        <option value="light">Light</option>
+        <option value="warm">Warm dark</option>
+      </select>
+    </div>
+    <div class="tweak-row">
+      <label>Accent colour</label>
+      <select id="tweak-accent">
+        <option value="teal">Electric teal</option>
+        <option value="violet">Violet</option>
+        <option value="amber">Amber</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+    <div class="tweak-row">
+      <label>Type scale</label>
+      <input type="range" id="tweak-scale" min="90" max="115" step="5" value="100">
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
