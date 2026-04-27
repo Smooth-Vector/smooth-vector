@@ -1232,3 +1232,149 @@ img { max-width: 100%; }
   .friction-list li { font-size: 14px; }
   .pricing-price { font-size: 20px; }
 }
+
+/* ── FAQ PAGE ── */
+.faq-header {
+  padding: 160px 48px 60px;
+  border-bottom: 1px solid var(--border);
+  max-width: 1200px;
+}
+.faq-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.5vw, 64px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+  text-wrap: pretty;
+  max-width: 880px;
+}
+.faq-h1 em { font-style: normal; color: var(--accent); }
+.faq-intro {
+  font-size: 17px;
+  color: var(--fg2);
+  max-width: 680px;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+.faq-intro a { color: var(--fg); border-bottom: 1px solid var(--accent-border); text-decoration: none; transition: color 0.2s ease, border-color 0.2s ease; }
+.faq-intro a:hover { color: var(--accent); border-color: var(--accent); }
+
+.faq-breadcrumb ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg3);
+}
+.faq-breadcrumb li + li::before {
+  content: '/';
+  margin-right: 8px;
+  color: var(--fg3);
+  opacity: 0.6;
+}
+.faq-breadcrumb a {
+  color: var(--fg3);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.faq-breadcrumb a:hover { color: var(--fg); }
+.faq-breadcrumb [aria-current="page"] { color: var(--fg2); }
+
+.faq-section { padding: 100px 48px; }
+.faq-group { margin-bottom: 80px; }
+.faq-group:last-child { margin-bottom: 0; }
+
+.faq-group-title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.faq-list { display: flex; flex-direction: column; }
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 24px 48px 24px 0;
+  position: relative;
+  font-family: var(--font-display);
+  font-size: clamp(16px, 1.5vw, 19px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  line-height: 1.45;
+  transition: color 0.2s ease;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background-image:
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor);
+  background-size: 14px 1.5px, 1.5px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  transition: transform 0.25s ease, background-size 0.25s ease;
+  color: var(--fg3);
+}
+.faq-item summary:hover { color: var(--accent); }
+.faq-item summary:hover::after { color: var(--accent); }
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.faq-item[open] summary::after {
+  background-size: 14px 1.5px, 0 14px;
+  color: var(--accent);
+}
+.faq-item[open] summary { color: var(--fg); }
+
+.faq-answer {
+  padding: 0 0 28px;
+  color: var(--fg2);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 780px;
+}
+.faq-answer p + p { margin-top: 14px; }
+.faq-answer strong { color: var(--fg); font-weight: 600; }
+
+@media (max-width: 1180px) {
+  .faq-header { padding: 140px 32px 56px; }
+  .faq-section { padding: 80px 32px; }
+}
+@media (max-width: 1024px) {
+  .faq-header { padding: 128px 24px 48px; }
+  .faq-section { padding: 64px 24px; }
+  .faq-group { margin-bottom: 56px; }
+}
+@media (max-width: 640px) {
+  .faq-header { padding: 104px 20px 36px; }
+  .faq-intro { font-size: 15px; }
+  .faq-section { padding: 48px 20px; }
+  .faq-group { margin-bottom: 40px; }
+  .faq-item summary { padding: 20px 36px 20px 0; font-size: 16px; }
+  .faq-item summary::after { width: 12px; height: 12px; background-size: 12px 1.5px, 1.5px 12px; }
+  .faq-item[open] summary::after { background-size: 12px 1.5px, 0 12px; }
+  .faq-answer { font-size: 14px; padding-bottom: 24px; }
+}
