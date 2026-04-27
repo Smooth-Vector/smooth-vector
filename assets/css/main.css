@@ -179,9 +179,14 @@ nav {
   border-radius: var(--radius);
   font-weight: 600;
   font-size: 15px;
+  font-family: inherit;
   text-decoration: none;
   transition: opacity 0.2s, transform 0.2s;
   display: inline-block;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
@@ -756,6 +761,15 @@ h2 em { font-style: normal; color: var(--accent); }
   flex-wrap: wrap;
 }
 
+.calendly-wrapper {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg3);
+}
+
 .cta-email {
   font-family: var(--font-mono);
   font-size: 13px;
@@ -766,6 +780,57 @@ h2 em { font-style: normal; color: var(--accent); }
 
 .cta-email a { color: var(--fg2); text-decoration: none; transition: color 0.2s; }
 .cta-email a:hover { color: var(--fg); }
+
+/* ── CALENDLY MODAL ── */
+.cal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.cal-modal[hidden] { display: none; }
+
+.cal-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.cal-modal-box {
+  position: relative;
+  z-index: 1;
+  width: min(900px, 100%);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg3);
+}
+
+.cal-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--fg2);
+  font-size: 18px;
+  line-height: 1;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.cal-modal-close:hover {
+  color: var(--fg);
+  border-color: rgba(240, 236, 230, 0.2);
+}
 
 /* ── FOOTER ── */
 footer {
