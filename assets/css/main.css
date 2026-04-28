@@ -349,7 +349,7 @@ h2 em { font-style: normal; color: var(--accent); }
 .friction-list li:hover { color: var(--fg); }
 
 .friction-list li::before {
-  content: '—';
+  content: '-';
   color: var(--accent);
   font-family: var(--font-mono);
   flex-shrink: 0;
@@ -989,7 +989,7 @@ img { max-width: 100%; }
   .pricing-header { gap: 48px; }
 }
 
-/* Tablet — stack hero, compress grids, enable hamburger */
+/* Tablet - stack hero, compress grids, enable hamburger */
 @media (max-width: 1024px) {
   nav { padding: 0 24px; }
   section { padding: 80px 24px; }
@@ -1101,7 +1101,7 @@ img { max-width: 100%; }
   .footer-meta { text-align: left; }
 }
 
-/* Mobile — everything to 1 column, tighter rhythm */
+/* Mobile - everything to 1 column, tighter rhythm */
 @media (max-width: 640px) {
   nav { padding: 0 20px; height: 60px; }
   .nav-links {
