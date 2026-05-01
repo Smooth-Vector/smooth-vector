@@ -456,8 +456,33 @@ h2 em { font-style: normal; color: var(--accent); }
   overflow: hidden;
 }
 
+.pricing-grid--1 { grid-template-columns: 1fr; }
 .pricing-grid--2 { grid-template-columns: 1fr 1fr; }
 .pricing-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
+
+.services-group {
+  margin-bottom: 56px;
+}
+.services-group:last-of-type { margin-bottom: 0; }
+.services-group-head {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+.services-group-intro {
+  color: var(--fg2);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 540px;
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .services-group-head { grid-template-columns: 1fr; gap: 12px; align-items: start; }
+  .services-group { margin-bottom: 40px; }
+}
 
 
 .pricing-card {
